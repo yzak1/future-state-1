@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AX Prototype (Future State)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              // Surface Colors
+              'primary-surface': '#ffffff', // white-100
+              'secondary-surface': '#f4f4f4', // neutral-100
+              'tertiary-surface': '#f1f5f1', // sage-100
+              
+              // Text Colors
+              'primary-text': '#222222', // neutral-1000
+              'secondary-text': '#414141', // neutral-800
+              'tertiary-text': '#707070', // neutral-600
+              
+              // Interaction & Brand
+              'primary-cta': '#47c8f0', // blue-400 (Corrected from previous #6DC5EC)
+              'primary-hover': '#81daf5', // blue-300
+              'brand-dark': '#000f46', // brand-1100 (UoM Blue)
+              'deep-navy': '#030F43', // Specific Service Tile Requirement
+              
+              // Interactive States
+              'interactive-800': '#003f8b', // interactive-800
+              'interactive-600': '#0d6cdd', // interactive-600 (Focus)
+              
+              // Specific Button Variants
+              'btn-green': '#AFC0A9',
+              'btn-green-hover': '#D7E0D4',
+              'btn-sec-hover': '#D7F0FA',
+              
+              // Utility & Feedback
+              'border-color': '#e0e0e0', // neutral-200
+              'success-bg': '#f2f6e2', // green-100
+              'success-msg': '#60751f', // green-600
+              'error-bg': '#fff1f2', // red-100
+              'error-msg': '#db1927', // red-600
+              'warning-bg': '#fff5cb', // yellow-100
+              'warning-msg': '#ac5907', // yellow-600
+            },
+            fontFamily: {
+              'fraunces': ['Fraunces', 'serif'],
+              'source-sans': ['"Source Sans 3"', 'sans-serif'],
+            },
+            boxShadow: {
+              'portal-card': '0 8px 16px 0 rgba(0, 0, 0, 0.08)', // Portal_FlexCard_Shadow
+            },
+            spacing: {
+              'xs': '8px',
+              's': '12px',
+              'm': '16px',
+              'l': '24px',
+              'xl': '36px',
+              'xxl': '60px',
+            }
+          }
+        }
+      }
+    </script>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.10.1",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-_OMO5m1R.js"></script>
+</head>
+  <body class="bg-primary-surface text-primary-text font-source-sans antialiased selection:bg-primary-cta selection:text-deep-navy">
+    <div id="root"></div>
+</body>
+</html>
